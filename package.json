@@ -1,0 +1,30 @@
+{
+  "name": "doc-sniff",
+  "version": "0.1.0",
+  "description": "A helper for combating incorrect content-type, aka a mime sniffing module for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitinn/doc-sniff.git"
+  },
+  "keywords": [
+    "sniff",
+    "mime",
+    "content-type"
+  ],
+  "author": "David Frank",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitinn/doc-sniff/issues"
+  },
+  "homepage": "https://github.com/bitinn/doc-sniff",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "chai-as-promised": "^4.1.1",
+    "mocha": "^2.1.0",
+    "native-or-bluebird": "^1.1.2"
+  }
+}
