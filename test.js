@@ -132,6 +132,21 @@ describe('doc-sniff', function() {
 			expect(docsniff(type, body)).to.equal('text/plain');
 		});
 
+		it('should detect content-type when its missing', function() {
+			type = false
+			body = '<html></html>';
+			expect(docsniff(type, body)).to.equal('text/html');
+
+			body = '<?xml version="1.0" encoding="UTF-8" ?>';
+			expect(docsniff(type, body)).to.equal('text/xml');
+
+			body = new Buffer('R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=', 'base64').toString();
+			expect(docsniff(type, body)).to.equal('application/octet-stream');
+
+			body = 'test string';
+			expect(docsniff(type, body)).to.equal('text/plain');
+		});
+
 		it('should trust content type if they are xml types', function() {
 			type = 'text/xml';
 			body = '<xml></xml>';
@@ -154,6 +169,9 @@ describe('doc-sniff', function() {
 
 			body = '<?xml version="1.0" encoding="UTF-8" ?><feed xmlns="http://www.w3.org/2005/Atom"></feed>';
 			expect(docsniff(type, body)).to.equal('application/atom+xml');
+
+			body = '<html></html>';
+			expect(docsniff(type, body)).to.equal(type);
 		});
 
 		it('should return original content-type if not supported', function() {
