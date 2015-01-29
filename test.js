@@ -172,6 +172,18 @@ describe('doc-sniff', function() {
 
 			body = '<html></html>';
 			expect(docsniff(type, body)).to.equal(type);
+
+			body = 'test string';
+			expect(docsniff(type, body)).to.equal(type);
+		});
+
+		it('should leave correct content type of html document alone', function() {
+			type = 'text/html';
+			body = '<html></html>';
+			expect(docsniff(type, body)).to.equal(type);
+
+			body = 'test string';
+			expect(docsniff(type, body)).to.equal(type);
 		});
 
 		it('should leave correct content type of xhtml document alone', function() {
