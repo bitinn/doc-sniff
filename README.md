@@ -46,7 +46,7 @@ Currently this module will correct following mime:
 - application/rdf+xml
 - application/octet-stream
 
-But it does not attempt to be overzealous at correcting subtypes; see example 3 above, if original mime is acceptable, it will not be changed.
+It does not attempt to be overzealous at correcting subtypes; see example 3 above, if original mime is acceptable, it will not be replaced.
 
 
 # API
@@ -59,9 +59,9 @@ But it does not attempt to be overzealous at correcting subtypes; see example 3 
 
 # Limits
 
-Whatwg spec has a much more thorough list for browser vendors, but on server-side, we are more interested in parsable documents, if you encounter a use case not covered by this algorithm, let us know on github issues.
+Whatwg spec has a much more thorough mime list for browser vendors, but on server-side, we are more interested in parsable documents, if you encounter a use case not covered by this algorithm, let us know at github issues.
 
-And obviously, any algorithm can be spoofed, so don't use it for validation, use it for mime sniffing only.
+Like any algorithm, this can be spoofed, so don't use it for validation, use it for mime sniffing only.
 
 
 # License
