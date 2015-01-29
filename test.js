@@ -169,12 +169,6 @@ describe('doc-sniff', function() {
 
 			body = '<?xml version="1.0" encoding="UTF-8" ?><feed xmlns="http://www.w3.org/2005/Atom"></feed>';
 			expect(docsniff(type, body)).to.equal('application/atom+xml');
-
-			body = '<html></html>';
-			expect(docsniff(type, body)).to.equal(type);
-
-			body = 'test string';
-			expect(docsniff(type, body)).to.equal(type);
 		});
 
 		it('should leave correct content type of html document alone', function() {
@@ -182,7 +176,7 @@ describe('doc-sniff', function() {
 			body = '<html></html>';
 			expect(docsniff(type, body)).to.equal(type);
 
-			body = 'test string';
+			body = '<div>test string</div>';
 			expect(docsniff(type, body)).to.equal(type);
 		});
 
