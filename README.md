@@ -57,6 +57,13 @@ But it does not attempt to be overzealous at correcting subtypes; see example 3 
 - `body` is the response body string
 
 
+# Limits
+
+Whatwg spec has a much more thorough list for browser vendors, but on server-side, we are more interested in parsable documents, if you encounter a use case not covered by this algorithm, let us know on github issues.
+
+And obviously, any algorithm can be spoofed, so don't use it for validation, use it for mime sniffing only.
+
+
 # License
 
 MIT
