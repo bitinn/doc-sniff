@@ -174,6 +174,16 @@ describe('doc-sniff', function() {
 			expect(docsniff(type, body)).to.equal(type);
 		});
 
+		it('should leave correct content type of xhtml document alone', function() {
+			type = 'text/html';
+			body = '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html><html></html>';
+			expect(docsniff(type, body)).to.equal('text/html');
+
+			type = 'application/xhtml+xml';
+			body = '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html><html></html>';
+			expect(docsniff(type, body)).to.equal('application/xhtml+xml');
+		});
+
 		it('should return original content-type if not supported', function() {
 			type = 'application/font-ttf';
 			body = '';

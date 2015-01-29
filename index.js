@@ -58,6 +58,11 @@ function docsniff(type, body) {
 	} else if (type === 'text/html') {
 		str = extractBody(body);
 
+		res = htmlSniff(str);
+		if (res) {
+			return res;
+		}
+
 		res = xmlSniff(str);
 		if (res) {
 			return res;
