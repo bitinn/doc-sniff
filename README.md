@@ -77,5 +77,5 @@ MIT
 [travis-url]: https://travis-ci.org/bitinn/doc-sniff
 [coveralls-image]: https://img.shields.io/coveralls/bitinn/doc-sniff.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/bitinn/doc-sniff
-[david-image]: https://img.shields.io/david/bitinn/doc-sniff.svg?style=flat-square
+[david-image]: https://david-dm.org/bitinn/doc-sniff.svg?style=flat-square
 [david-url]: https://david-dm.org/bitinn/doc-sniff
