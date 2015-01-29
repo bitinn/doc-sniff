@@ -14,7 +14,7 @@ A helper for combating incorrect content-type, aka a mime sniffing module for no
 
 So you have made a http request and got back some headers and a response body, but you just don't know if that innocent `Content-Type` header tells you what really goes on in its `body`.
 
-Enter `doc-sniff`, a simple node.js implementation of [whatwg mime sniffing](https://mimesniff.spec.whatwg.org/) algorithm. Specifically for those responses that can't be easily distinguished via [file extensions](https://github.com/broofa/node-mime) or [magic numbers](https://github.com/mscdex/mmmagic), eg. HTML, XML documents.
+Enter `doc-sniff`, a much simpler implementation of [whatwg mime sniffing](https://mimesniff.spec.whatwg.org/) algorithm. Specifically for those responses that can't be easily distinguished via [file extensions](https://github.com/broofa/node-mime) or [magic numbers](https://github.com/mscdex/mmmagic), eg. HTML, XML documents.
 
 
 # Install
