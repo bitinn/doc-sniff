@@ -1,6 +1,6 @@
 {
   "name": "doc-sniff",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A helper for combating incorrect content-type, aka a mime sniffing module for node.js",
   "main": "index.js",
   "scripts": {
