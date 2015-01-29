@@ -4,6 +4,8 @@ doc-sniff
 
 [![npm version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
+[![coverage status][coveralls-image]][coveralls-url]
+[![dependency status][david-image]][david-url]
 
 A helper for combating incorrect content-type, aka a mime sniffing module for node.js
 
@@ -73,3 +75,7 @@ MIT
 [npm-url]: https://www.npmjs.com/package/doc-sniff
 [travis-image]: https://img.shields.io/travis/bitinn/doc-sniff.svg?style=flat-square
 [travis-url]: https://travis-ci.org/bitinn/doc-sniff
+[coveralls-image]: https://img.shields.io/coveralls/bitinn/doc-sniff.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/bitinn/doc-sniff
+[david-image]: https://img.shields.io/david/bitinn/doc-sniff.svg?style=flat-square
+[david-url]: https://david-dm.org/bitinn/doc-sniff
