@@ -57,13 +57,16 @@ It does not attempt to be overzealous at correcting subtypes; see example 3 abov
 
 - `type` is the content-type header in response
 - `body` is the response body string
+- returns the sniffed content-type as string
 
 
 # Limits
 
-Whatwg spec has a much more thorough mime list for browser vendors, but on server-side, we are more interested in parsable documents, if you encounter a use case not covered by this algorithm, let us know at github issues.
+The [whatwg spec](https://mimesniff.spec.whatwg.org) has a much more thorough algorithm and mime list for browser vendors, but on server-side, we are more interested in parsable documents and information extractions, if you encounter a use case not covered by this algorithm, please let us know on github issues.
 
-Like any algorithm, this can be spoofed, so don't use it for validation, use it for mime sniffing only.
+Like any simple algorithm, this can easily be spoofed, so don't use it for validation, use it for mime sniffing incoming documents only.
+
+(For better security: [mime](https://github.com/broofa/node-mime) and [mmmagic](https://github.com/mscdex/mmmagic) can handle most filetypes, but you still need XSS protections and content whitelist to safely serve content to users.)
 
 
 # License
