@@ -69,7 +69,7 @@ And obviously, any algorithm can be spoofed, so don't use it for validation, use
 MIT
 
 
-[npm-image]: https://img.shields.io/npm/v/node-fetch.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/node-fetch
-[travis-image]: https://img.shields.io/travis/bitinn/node-fetch.svg?style=flat-square
-[travis-url]: https://travis-ci.org/bitinn/node-fetch
+[npm-image]: https://img.shields.io/npm/v/doc-sniff.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/doc-sniff
+[travis-image]: https://img.shields.io/travis/bitinn/doc-sniff.svg?style=flat-square
+[travis-url]: https://travis-ci.org/bitinn/doc-sniff
